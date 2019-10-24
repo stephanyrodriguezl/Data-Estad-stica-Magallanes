@@ -1,0 +1,20 @@
+
+```{r}
+install.packages("sd")
+install.packages("geojsonio")
+install.packages("rgdal")
+```
+```{r}
+# instalar:
+library(sp)
+library(geojsonio)
+library(rgdal)
+
+fromGit="https://github.com/stephanyrodriguezl/Data-Estad-stica-Magallanes/raw/master/seattle.json" # link desde github
+
+wazipMap <- rgdal::readOGR(fromGit,stringsAsFactors = FALSE)
+plot(wazipMap)
+
+install.packages("rio")
+```
+
